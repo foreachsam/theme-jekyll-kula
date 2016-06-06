@@ -1,0 +1,64 @@
+
+//fix
+.firefox pre {
+	white-space: pre !important;
+}
+
+code, kbd, pre.code, samp, var {
+    line-height: inherit;
+    font-family: Monospace, Menlo, Monaco, Consolas, 'Courier New';
+    font-size: 20px;
+}
+code, kbd {
+    display: inline-block;
+    padding: 0 4px;
+    border: 1px solid transparent;
+    vertical-align: text-bottom;
+    border-radius: 2px
+}
+code code, code kbd, kbd code, kbd kbd {
+    display: inline;
+    padding: 0;
+    border: none
+}
+code {
+    line-height: 1.4em;
+    color: none;
+    border-color: none;
+    background-color: none;
+    text-shadow: none;
+}
+kbd {
+    line-height: inherit;
+    font-size: 14px;
+    font-size: .875rem;
+    color: #22c8e7;
+    background-color: #333;
+    vertical-align: baseline
+}
+kbd span {
+    color: #ccc
+}
+pre {
+    margin: 20px 0
+}
+pre.code {
+    overflow: hidden;
+    padding: 5px 10px;
+    border: 1px dashed #b3b3b3;
+    border-radius: 4px;
+    word-spacing: normal;
+    white-space: pre;
+    text-align: left;
+    text-shadow: 0 1px 0 #fff;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    color: #da002a;
+    background: #fafafa;
+    word-break: break-all;
+    word-wrap: break-word
+}
+.firefox pre.language {
+    white-space: pre;
+}

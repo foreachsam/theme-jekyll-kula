@@ -1,0 +1,41 @@
+
+<div class="modal-overlay sidebar-overlay"></div>
+
+<div class="sidebar overflow-auto">
+
+	<ul class="sidebar-link">
+		<li class="item"><a href="javascript:;" class=" menu-btn"><i class="angle double down icon"></i>Close</a></li>
+	</ul>
+
+
+	<div class="accordion accordion-side">
+		<h3 class="accordion-header">
+			<i class="caret"></i>
+			主要連結
+		</h3>
+		<div class="accordion-content ">
+			<ul class="sidebar-link">
+				{% if site.paginate_subpath %}
+				<li class="item"><a href="{{ site.paginate_subpath | prepend: site.baseurl | append: '/' | escape }}" class="" title="Blog"><i class="book icon"></i>Blog</a></li>
+				{% endif %}
+
+				<li class="item"><a href="{{ '/sitemap.xml' | prepend: site.baseurl | escape }}" class="" title="Sitemap">Sitemap</a></li>
+
+				<li class="item"><a href="{{ site.repo.url | escape }}" class="" target="_blank" title="GitHub">Theme GitHub</a></li>
+			</ul>
+		</div>
+		<h3 class="accordion-header">
+			<i class="caret"></i>
+			相關技術
+		</h3>
+		<div class="accordion-content">
+			<ul class="sidebar-link">
+				{% for menu_item in site.menu %}
+				<li class="item"><a href="{{ menu_item.url | escape }}" class="" target="_blank" title="{{ menu_item.title | escape }}">{{ menu_item.title | escape }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+
+
+</div>

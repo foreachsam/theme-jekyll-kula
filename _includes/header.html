@@ -1,0 +1,27 @@
+<div class="navbar bg-primary">
+
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-toggle right menu-btn"></a>
+			<a class="navbar-brand" href="{{ site.baseurl | append: '/' | escape }}" title="{{ site.title | escape }}"><i class="home icon"></i>{{ site.title | escape }}</a>
+		</div>
+
+		<div class="navbar-content">
+			<ul class="navbar-nav right">
+				{% if site.paginate_subpath %}
+				<li class="navbar-nav-item">
+					<a href="{{ site.paginate_subpath | prepend: site.baseurl | escape }}/" class="navbar-nav-link" title="Blog"><i class="book icon"></i>Blog</a>
+				</li>
+				{% endif %}
+
+				<li class="navbar-nav-item">
+					<a href="{{ site.repo.url | escape }}" class="navbar-nav-link" target="_blank" title="GitHub"><i class="github icon"></i>GitHub</a>
+				</li>
+				<li class="navbar-nav-item">
+					<a class="navbar-nav-link menu-btn">選單</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,24 @@
+
+						<div class="pnl-pager">
+							{% include pagenav.html %}
+						</div>
+
+
+						{% for post in paginator.posts %}
+						<div class="info-item info-item-outline" itemscope="" itemtype="http://schema.org/Article" >
+
+							<div class="info-item-cover">
+								<img class="" src="{{ page.image_src | default: '/asset/img/logo.png' | prepend: site.baseurl | escape }}" />
+							</div>
+
+							<div class="info-item-content">
+								<h4 class="info-item-title "><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url" class="{{ post.title | escape }}" title="{{ post.title | escape }}" ><span  class="archive-item-title" itemprop="name">{{ post.title | escape }}</span></a></h4>
+						        <div class="metas">
+						            <span class="meta">Posted by {{ post.author | default: site.author | escape }}</span>
+						            <span class="meta"><a href="{{ post.url | prepend: site.baseurl | escape }}" title="{{ post.title | escape }}" ><span class="archive-item-date" itemprop="datePublished" content="{{ post.date | date: '%b %-d, %Y' | escape }}" >{{ post.date | date: '%b %-d, %Y' | escape }}</span></a></span>
+						        </div>
+
+								{{ post.description | escape }}
+							</div>
+						</div>
+						{% endfor %}

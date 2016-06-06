@@ -1,0 +1,18 @@
+
+							<div class="pager align-center">
+							{% if paginator.next_page %}
+								<a class="pager-prev" href="{{ site.baseurl }}{{ site.paginate_subpath }}/page{{paginator.next_page}}/">Older Posts</a>
+							{% else %}
+								<span class="pager-prev disabled">Older Posts</span>
+							{% endif %}
+
+							{% if paginator.previous_page %}
+								{% if paginator.page == 2 %}
+								<a class="pager-next" href="{{ site.baseurl }}{{ site.paginate_subpath }}/">Newer Posts</a>
+								{% else %}
+								<a class="pager-next" href="{{ site.baseurl }}{{ site.paginate_subpath }}/page{{paginator.previous_page}}/">Newer Posts</a>
+								{% endif %}
+							{% else %}
+								<span class="pager-next disabled">Newer Posts</span>
+							{% endif %}
+							</div>

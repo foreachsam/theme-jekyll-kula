@@ -1,0 +1,101 @@
+.box-logo {
+  height: 210px;
+  background-color: #d84315;
+}
+
+.img-logo {
+	width: 100%;
+}
+
+
+.nav-btn {
+	font-size: 20px;
+}
+
+
+.pnl-not-found {
+	margin-top: 80px;
+	display: none;
+}
+
+.navbar {
+	border: medium none;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+}
+
+.sidebar {
+	border: medium none;
+    margin: 0;
+    position: fixed;
+    width: 30%;
+	height: 100%;
+    z-index: 1000;
+	left: 0;
+	top: 0;
+	display: none;
+	background-color: white;
+
+}
+
+.sidebar-overlay {
+	z-index: 900;
+	display: none;
+}
+
+@media (max-width:767px) {
+    .sidebar {
+		width: 70%;
+    }
+}
+
+
+
+.bg-primary .navbar-brand, .navbar-nav-link {
+	color: white;
+}
+
+.bg-primary .navbar-nav-link:hover {
+	color: #eee;
+}
+
+
+
+
+.sidebar-link {
+    font-size: 14px;
+    font-size: .875rem
+}
+
+.sidebar-link a,
+.sidebar-link span {
+    display: inline-block;
+    line-height: 1.2;
+    padding-left: 18px;
+    margin-bottom: 5px;
+    margin-left: 2px
+}
+
+.sidebar-link a {
+    color: #777
+}
+
+.sidebar-link a:hover {
+    color: #28717f
+}
+
+.sidebar-link a:hover {
+    border-left-color: #45a7b9
+}
+
+.sidebar-link span {
+    color: #cfcfcf
+}
+
+.sidebar-link li.active a {
+    padding-left: 16px;
+    border-left: 2px solid #45a7b9;
+    color: #28717f
+}

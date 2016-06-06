@@ -1,0 +1,70 @@
+#### Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+#### Site settings
+title: 'Jekyll Theme Kula'
+email: foreachsam@users.noreply.github.com
+description: > # this means to ignore newlines until "baseurl:"
+  Jekyll Theme With Kule Lazy
+baseurl: '/theme-jekyll-kula' # the subpath of your site, e.g. /blog
+url: "http://foreachsam.github.io" # the base hostname & protocol for your site
+author: foreachsam
+twitter_username: foreachsam
+github_username:  foreachsam
+
+
+#### Build settings
+markdown: kramdown
+
+
+#### Repository
+repo:
+    url: https://github.com/foreachsam/theme-jekyll-kula
+
+
+#### Plugin
+gems:
+  - 'jekyll-paginate'
+
+
+#### Blog Paginate
+paginate: 2
+#paginate_path: '/read/blog/page:num'
+#paginate_subpath: '/read/blog'
+
+
+#### Google Analytics
+google_analytics: 'UA-56999876-1'
+
+
+#### Permalink
+permalink: '/read/article/:slug'
+
+
+#### Menu
+menu:
+  - title: 'Jekyll'
+    url: 'https://jekyllrb.com/'
+    icon: 'book'
+  - title: 'Jekyll GitHub'
+    url: 'https://github.com/jekyll/jekyll'
+    icon: 'github'
+  - title: 'Kule Lazy'
+    url: 'http://www.kule.tw/'
+    icon: 'book'
+  - title: 'Kule Lazy Docs'
+    url: 'http://www.kule.tw/doc.html'
+    icon: 'book'
+  - title: 'Kule Lazy GitHub'
+    url: 'https://github.com/keicheng/kule.lazy'
+    icon: 'github'
+  - title: 'Kule Lazy CDNJS'
+    url: 'https://cdnjs.com/libraries/kule.lazy'
+    icon: 'cdn'
+  - title: 'Kule Lazy CDNJS GitHub'
+    url: 'https://github.com/cdnjs/cdnjs/tree/master/ajax/libs/kule.lazy'
+    icon: 'cdn'
